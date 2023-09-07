@@ -1,0 +1,66 @@
+.app-div {
+  min-width: 100vw;
+}
+.form-group {
+  margin-bottom: 20px;
+  padding: 1%;
+}
+.task-form {
+  margin-left: 15%;
+  width: 70%;
+  margin-top: 5%;
+  background: linear-gradient(to right, #91c8e4, #dcb5d5);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 10);
+}
+.task-form label {
+  padding: 10px;
+}
+.task,
+textarea,
+.date {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+/* In your CSS file */
+
+/* Style the dropdown container */
+#priority {
+  position: relative;
+  display: inline-block; /* Display it inline to fit in the content flow */
+  appearance: none; /* Remove default styles */
+  padding: 8px 32px 8px 12px; /* Adjust padding as needed */
+  border: 1px solid #ccc; /* Add a border for a dropdown appearance */
+  border-radius: 4px; /* Add rounded corners */
+  background-color: #fff; /* Set background color */
+  cursor: pointer; /* Add a pointer cursor */
+}
+
+/* Style the dropdown arrow/icon */
+#priority::after {
+  content: "▼"; /* Add a down arrow or any icon you prefer */
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  /* pointer-events: none; */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .task,
+  textarea,
+  .date {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  input[type="text"],
+  textarea,
+  input[type="date"] {
+    font-size: 12px;
+  }
+}
